@@ -21,7 +21,7 @@
       <mkdir dir="${dist.zip.dir}"/>
    </target>
 
-   <target name="props" depends="init" description="Set version-specific properties.">
+   <target name="props" depends="init" descr=k"Set version-specific properties.">
       <replaceregexp file="${framework.resources}" byline="true">
          <regexp pattern="(version.id\s*=\s*).*"/>
          <substitution expression="\1${version.id}"/>
